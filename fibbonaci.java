@@ -9,7 +9,7 @@ public class fibbonaci {
         int secNum = 1;
         int fibNum = 0;
         Scanner scanner = new Scanner(System.in);
-        double position = scanner.nextDouble();
+        int position = (int)scanner.nextDouble();
 
         if (position == 1) {
             fibNum = firstNum;
@@ -28,11 +28,11 @@ public class fibbonaci {
 
         }else{
             for (int i = 3; i <= position; i++) {
-               position = (int) position;
+               
                fibNum = secNum + firstNum;
                firstNum = secNum;
                secNum = fibNum;}
-               System.out.println("The " + (int) position + "th" + " index number is the Fibonacci number: " + fibNum);
+               System.out.println("The " + position + "th" + " index number is the Fibonacci number: " + fibNum);
 
             }
 
